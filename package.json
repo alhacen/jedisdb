@@ -1,0 +1,41 @@
+{
+  "name": "jedisdb",
+  "version": "0.1.0",
+  "description": "React key-value state management solution, accessible in all components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-file index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alhaqhassan/jedis.git"
+  },
+  "author": "Ahmad Hassan Ansari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alhaqhassan/jedis/issues"
+  },
+  "homepage": "https://github.com/alhaqhassan/jedis#readme",
+  "peerDependencies": {
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3"
+  },
+  "keywords": [
+    "react",
+    "global key-value state",
+    "redux alternative",
+    "key-value state",
+    "global state",
+    "global hook",
+    "sync state"
+  ]
+}

@@ -16,7 +16,7 @@ usestate is a wrapper on react useState hook, that makes it accessible through a
 
 <h1>Basic Usage</h1>
 
-```npm i usejedis```
+```npm i jedisdb```
 
 <h3>happy hacking</h3>
 
@@ -39,4 +39,6 @@ if we don't pass fallbackValue it will create jedis object of value undefined
   );
 }
 ```
+
+[Codesandbox Demo](https://codesandbox.io/s/usejedis-demo1-owozg?file=/src/App.js).
 

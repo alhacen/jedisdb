@@ -1,4 +1,4 @@
-<h1 align="center">usejedis</h1>
+<h1 align="center">jedisdb</h1>
 <h3 align="center">redis like key-value state management solution for React</h3>
 <p align="center">Reactive, Redux alternative, Simple and powerfull global state management system, accessible in all components</p>
 
@@ -16,7 +16,10 @@ usestate is a wrapper on react useState hook, that makes it accessible through a
 
 <h1>Basic Usage</h1>
 
-```npm i jedisdb```
+```
+npm i jedisdb
+yarn add jedisdb
+```
 
 <h3>happy hacking</h3>
 

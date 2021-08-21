@@ -4,7 +4,7 @@
 
 <h1>Philosophy</h1>
 
-usestate is a wrapper on react useState hook, that makes it accessible through all the components without passing in the components, so no need to create stores, actions, or dispatchers.
+jedisdb is a wrapper on react useState hook, that makes it accessible through all the components without passing in the components, so no need to create stores, actions, or dispatchers.
 
 
 <h1>Features 📋</h1>
@@ -42,6 +42,9 @@ if we don't pass fallbackValue it will create jedis object of value undefined
   );
 }
 ```
+<h3>Demo:</h3>
 
-[Codesandbox Demo](https://codesandbox.io/s/usejedis-demo1-owozg?file=/src/App.js).
+Counter [Codesandbox](https://codesandbox.io/s/usejedis-demo1-owozg?file=/src/App.js).
+
+Shopping Cart [Codesandbox](https://codesandbox.io/s/shopping-cart-usejedis-qbgwq?file=/src/App.js).
 

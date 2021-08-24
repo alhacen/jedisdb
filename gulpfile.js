@@ -7,5 +7,6 @@ gulp.task('minify', () => {
   return gulp.src('src/**/*.js')
     .pipe(babel())
     .pipe(uglify())
+    .pipe(rename("index.min.js"))
     .pipe(gulp.dest('dist'))
 });

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-let myProxy = {
+let jedisProxy = {
   get(target, key) {
     if (key === 'state') {
       return target.get();
@@ -38,7 +38,27 @@ const useJedis = (key, defaultValue) =>{
       jedisObj.setters.map(setter=> setter(value));
       jedisObj.state = value;
     }
-  }, myProxy)
+  }, jedisProxy)
 }
 
+export const createState = (defaultValue) =>{
+  if (!window.useJedisStateOBJ) //create jedisObject, if not exist
+    window.useJedisStateOBJ = {};
+    for (const [key, value] of Object.entries(defaultValue)) {
+      if(!window.useJedisStateOBJ[key])//create key, if not exist
+      window.useJedisStateOBJ[key] = { state: value, setters: [] }
+    }
+    
+}
+export const selectState = (key) => {
+  if(!window.useJedisStateOBJ[key]?.state)
+  return ;
+  return new Proxy({
+    get: ()=> window.useJedisStateOBJ[key].state,
+    set: (value) => {
+      window.useJedisStateOBJ[key].setters.map(setter=> setter(value));
+      window.useJedisStateOBJ[key].state = value;
+    }
+  }, jedisProxy)
+}
 export default useJedis

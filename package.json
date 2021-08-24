@@ -1,8 +1,8 @@
 {
   "name": "jedisdb",
-  "version": "0.1.6",
+  "version": "0.2.4",
   "description": "React key-value state management solution, accessible in all components",
-  "main": "dist/index.js",
+  "main": "dist/index.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp minify"
@@ -31,7 +31,8 @@
     "gulp-babel": "^8.0.0",
     "gulp-uglify": "^3.0.2",
     "react": "^16.6.1",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "gulp-rename": "^2.0.0"
   },
   "keywords": [
     "react",

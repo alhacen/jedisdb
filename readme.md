@@ -17,6 +17,9 @@ jedisdb is a wrapper for React.JS useState hook. jedisdb makes the hook accessib
 
 ```
 npm i jedisdb
+
+or
+
 yarn add jedisdb
 ```
 
@@ -50,7 +53,7 @@ Shopping Cart [Codesandbox](https://codesandbox.io/s/shopping-cart-usejedis-qbgw
 >`useJedis` returns a react hook so it can only used in react functional components,<br><br>
 `selectState` has no side effects, it can be used anywhere,<br>
 `createState` creates jedis object without any side effects. <br>
-demo: Accessing value in JS funciton [Codesandbox](https://codesandbox.io/s/usejedis-demo2-pdfsm?file=/src/myjsfunction.js).
+demo: Accessing value in JS funciton [Codesandbox](https://codesandbox.io/s/usejedis-demo2-pdfsm?file=/src/App.js).
 
 <h3>Best Practice</h3>
 
@@ -98,7 +101,7 @@ function Counter() {
 }
 export default Counter;
 ```
-demo: [Codesandbox](https://codesandbox.io/s/usejedis-practice-lxrhs)
+demo: [Codesandbox](https://codesandbox.io/s/usejedis-practice-lxrhs?file=/src/App.js)
 
 <br>
 

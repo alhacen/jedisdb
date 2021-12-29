@@ -51,7 +51,7 @@ export const createState = (defaultValue) =>{
     
 }
 export const selectState = (key) => {
-  if(!window.useJedisStateOBJ[key]?.state)
+  if(window.useJedisStateOBJ[key]?.state === undefined)
   return ;
   return new Proxy({
     get: ()=> window.useJedisStateOBJ[key].state,

@@ -35,8 +35,8 @@ const useJedis = (key, defaultValue) =>{
   return new Proxy({
     get: () => value, 
     set: (value) => {
-      jedisObj.setters.map(setter=> setter(value));
       jedisObj.state = value;
+      jedisObj.setters.map(setter=> setter(value));
     }
   }, jedisProxy)
 }
@@ -56,8 +56,8 @@ export const selectState = (key) => {
   return new Proxy({
     get: ()=> window.useJedisStateOBJ[key].state,
     set: (value) => {
-      window.useJedisStateOBJ[key].setters.map(setter=> setter(value));
       window.useJedisStateOBJ[key].state = value;
+      window.useJedisStateOBJ[key].setters.map(setter=> setter(value));
     }
   }, jedisProxy)
 }

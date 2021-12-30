@@ -1,6 +1,6 @@
 {
   "name": "jedisdb",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "React key-value state management solution, accessible in all components",
   "main": "dist/index.min.js",
   "scripts": {
